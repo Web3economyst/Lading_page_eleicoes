@@ -1,0 +1,40 @@
+header {
+    width: 100%;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+    background-color: var(--text-light);
+    border-bottom: 1px solid #eaeaea;
+    z-index: 1000;
+}
+
+#navbar {
+    max-width: var(--max-width);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav_logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-item a:hover {
+    color: var(--accent);
+}
