@@ -1,154 +1,136 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Gabriel Follmer de Mattos | Personal Page</title>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="src/styles/variables.css">
-    <link rel="stylesheet" href="src/styles/header.css">
-    <link rel="stylesheet" href="src/styles/sections.css">
-    <link rel="stylesheet" href="src/styles/about.css">
-    <link rel="stylesheet" href="src/styles/cards.css">
-    <link rel="stylesheet" href="src/styles/footer.css">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-</head>
-<body>
-
-<header>
-    <nav id="navbar">
-
-        <div id="nav_logo">
-            Gabriel F. Mattos
-        </div>
-
-        <ul id="nav_list">
-            <li class="nav-item active"><a href="#about">About</a></li>
-            <li class="nav-item"><a href="#research">Research</a></li>
-            <li class="nav-item"><a href="#teaching">Teaching</a></li>
-            <li class="nav-item"><a href="#projects">Projects</a></li>
-            <li class="nav-item"><a href="#contact">Contact</a></li>
-        </ul>
-
-        <button id="mobile_btn">
-            <i class="fa-solid fa-bars"></i>
-        </button>
-    </nav>
-
-    <div id="mobile_menu">
-        <ul id="mobile_nav_list">
-            <li class="nav-item"><a href="#about">About</a></li>
-            <li class="nav-item"><a href="#research">Research</a></li>
-            <li class="nav-item"><a href="#teaching">Teaching</a></li>
-            <li class="nav-item"><a href="#projects">Projects</a></li>
-            <li class="nav-item"><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-</header>
-
 <main>
 
-    <!-- ABOUT -->
-    <section id="about" class="section">
-        <div class="container about-container">
+    <!-- HERO -->
+    <section id="about" class="hero">
+        <div class="container hero-container">
 
-            <div class="about-text">
-                <h1 class="main-title">Gabriel Follmer de Mattos</h1>
-                <h2 class="subtitle">Economics | Quantitative Research | Data Analysis</h2>
+            <div class="hero-text">
+                <h1>name</h1>
+                <h2>Electoral Research & Polling Analysis</h2>
 
                 <p>
-                    I am interested in applied economics, econometrics,
-                    financial markets and quantitative research.
+                    I specialize in electoral polling analysis, bias measurement,
+                    forecasting models and quantitative evaluation of survey accuracy.
+                    My work focuses on Brazilian elections and institutional dynamics.
                 </p>
 
-                <div class="social-links">
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                    <a href="mailto:your@email.com"><i class="fa-solid fa-envelope"></i></a>
+                <div class="hero-buttons">
+                    <a href="#" class="btn-primary">Research Papers</a>
+                    <a href="#projects" class="btn-secondary">View Projects</a>
                 </div>
             </div>
 
-            <div class="about-image">
-                <!-- Coloque sua imagem aqui -->
+            <div class="hero-image">
                 <img src="src/images/avatar.jpg" alt="Gabriel Follmer">
             </div>
 
         </div>
     </section>
 
+
     <!-- RESEARCH -->
     <section id="research" class="section light">
         <div class="container">
-            <h2 class="section-title">Research</h2>
+            <h2 class="section-title">Research Focus</h2>
 
-            <div class="card">
-                <h3>Working Papers</h3>
-                <ul>
-                    <li>Electoral Poll Bias and Forecasting Models</li>
-                    <li>Financial Markets and Regulatory Shocks</li>
-                    <li>Applied Econometrics in Political Economy</li>
-                </ul>
-            </div>
+            <div class="grid-2">
 
-            <div class="card">
-                <h3>Research Interests</h3>
-                <p>
-                    Political Economy, Financial Economics,
-                    Applied Microeconomics, Econometrics.
-                </p>
+                <div>
+                    <h3>Methodological Interests</h3>
+                    <ul>
+                        <li>Polling Bias Measurement</li>
+                        <li>Forecasting Models</li>
+                        <li>Survey Methodology</li>
+                        <li>Time Series in Electoral Data</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Research Areas</h3>
+                    <ul>
+                        <li>Brazilian Presidential Elections</li>
+                        <li>Polling Institute Performance</li>
+                        <li>Electoral Uncertainty</li>
+                        <li>Statistical Evaluation of Forecast Accuracy</li>
+                    </ul>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- TEACHING -->
-    <section id="teaching" class="section">
+
+    <!-- DATA & MODELS -->
+    <section id="models" class="section">
         <div class="container">
-            <h2 class="section-title">Teaching</h2>
+            <h2 class="section-title">Data & Models</h2>
 
-            <div class="card">
-                <ul>
-                    <li>Introduction to Microeconomics</li>
-                    <li>Econometrics I</li>
-                    <li>Data Analysis with R</li>
-                </ul>
+            <div class="grid-2">
+                <div class="project-card">
+                    <h3>Polling Bias Index</h3>
+                    <p>
+                        Development of an index to evaluate systematic bias 
+                        across polling institutes in multiple election cycles.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Electoral Forecast Model</h3>
+                    <p>
+                        Statistical forecasting framework combining polling averages,
+                        volatility measures and historical calibration.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
+
 
     <!-- PROJECTS -->
     <section id="projects" class="section light">
         <div class="container">
-            <h2 class="section-title">Projects</h2>
+            <h2 class="section-title">Selected Projects</h2>
 
-            <div class="card project-card">
-                <img src="src/images/project1.png" alt="Electoral Project">
-                <h3>Electoral Data Analysis</h3>
-                <p>
-                    Quantitative analysis of Brazilian electoral surveys,
-                    bias measurement and forecasting models.
-                </p>
-            </div>
+            <div class="grid-2">
+                <div class="project-card">
+                    <img src="src/images/project1.png" alt="">
+                    <h3>2022 Presidential Election Analysis</h3>
+                    <p>
+                        Evaluation of polling accuracy and second-round forecasting errors.
+                    </p>
+                </div>
 
-            <div class="card project-card">
-                <img src="src/images/project2.png" alt="Financial Dashboard">
-                <h3>Financial Markets Dashboard</h3>
-                <p>
-                    Data visualization and regulatory impact monitoring tools.
-                </p>
+                <div class="project-card">
+                    <img src="src/images/project2.png" alt="">
+                    <h3>Institute Performance Ranking</h3>
+                    <p>
+                        Comparative study of polling firms based on historical deviations.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
+
+    <!-- PUBLICATIONS -->
+    <section id="publications" class="section">
+        <div class="container">
+            <h2 class="section-title">Working Papers</h2>
+
+            <ul class="teaching-list">
+                <li>
+                    Electoral Poll Bias and Forecasting Accuracy in Brazil (2024)
+                </li>
+                <li>
+                    Institutional Determinants of Survey Error
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
     <!-- CONTACT -->
-    <section id="contact" class="section">
+    <section id="contact" class="section light">
         <div class="container">
             <h2 class="section-title">Contact</h2>
 
@@ -158,14 +140,3 @@
     </section>
 
 </main>
-
-<footer>
-    <div class="container">
-        © 2026 Gabriel Follmer de Mattos
-    </div>
-</footer>
-
-<script src="src/javascript/script.js"></script>
-
-</body>
-</html>

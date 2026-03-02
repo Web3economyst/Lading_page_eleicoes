@@ -1,0 +1,18 @@
+.section {
+    padding: 100px 8%;
+}
+
+.section.light {
+    background-color: var(--light-bg);
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: auto;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}

@@ -3,8 +3,8 @@ header {
     padding: 20px 8%;
     position: sticky;
     top: 0;
-    background-color: var(--text-light);
-    border-bottom: 1px solid #eaeaea;
+    background: white;
+    border-bottom: 1px solid var(--border-color);
     z-index: 1000;
 }
 
@@ -17,15 +17,15 @@ header {
 }
 
 #nav_logo {
-    font-size: 20px;
     font-weight: 700;
+    font-size: 18px;
     color: var(--primary);
 }
 
 #nav_list {
     display: flex;
-    list-style: none;
     gap: 40px;
+    list-style: none;
 }
 
 .nav-item a {
@@ -35,6 +35,11 @@ header {
     transition: 0.3s;
 }
 
-.nav-item a:hover {
+.nav-item a:hover,
+.nav-item.active a {
     color: var(--accent);
+}
+
+#mobile_btn {
+    display: none;
 }
