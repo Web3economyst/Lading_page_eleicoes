@@ -5,26 +5,51 @@
     <title>Gabriel Follmer | Electoral Polling Research</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="sections.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <div class="container nav">
-        <div class="logo">Gabriel Follmer</div>
-        <nav>
-            <a href="#paper">Main Paper</a>
-            <a href="#methodology">Methodology</a>
-            <a href="#data">Data</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </nav>
+    <div id="navbar">
+        <div id="nav_logo">Gabriel Follmer</div>
+        
+        <ul id="nav_list">
+            <li class="nav-item active"><a href="#paper">Main Paper</a></li>
+            <li class="nav-item"><a href="#methodology">Methodology</a></li>
+            <li class="nav-item"><a href="#data">Data</a></li>
+            <li class="nav-item"><a href="#about">About</a></li>
+            <li class="nav-item"><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button id="mobile_btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+    
+    <div id="mobile_menu">
+        <ul style="list-style: none; padding: 20px; text-align: center;">
+            <li class="nav-item"><a href="#paper">Main Paper</a></li>
+            <li class="nav-item"><a href="#methodology">Methodology</a></li>
+            <li class="nav-item"><a href="#data">Data</a></li>
+            <li class="nav-item"><a href="#about">About</a></li>
+            <li class="nav-item"><a href="#contact">Contact</a></li>
+        </ul>
     </div>
 </header>
 
-<section class="hero">
-    <div class="container hero-content">
+<section class="hero section">
+    <div class="hero-container">
         <div class="hero-text">
             <h1>Statistical Evaluation of Electoral Polling Accuracy</h1>
             <p>
@@ -56,7 +81,7 @@
     </div>
 </section>
 
-<section id="methodology" class="section alt">
+<section id="methodology" class="section light">
     <div class="container">
         <h2>Methodological Framework</h2>
 
@@ -84,12 +109,12 @@
         <h2>Data & Replication</h2>
 
         <div class="grid-2">
-            <div class="card">
+            <div class="project-card">
                 <h3>Dataset</h3>
                 <p>Consolidated dataset of national and state-level surveys from 2006–2022.</p>
             </div>
 
-            <div class="card">
+            <div class="project-card">
                 <h3>Replication Files</h3>
                 <p>R scripts and econometric models available for full reproducibility.</p>
             </div>
@@ -97,7 +122,7 @@
     </div>
 </section>
 
-<section id="about" class="section alt">
+<section id="about" class="section light">
     <div class="container">
         <h2>About</h2>
         <p class="paper-text">
@@ -122,6 +147,10 @@
         <p>© 2026 Gabriel Follmer — Electoral Research</p>
     </div>
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
