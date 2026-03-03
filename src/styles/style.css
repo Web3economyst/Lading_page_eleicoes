@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9fafb;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+header {
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #374151;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+.hero {
+    padding: 80px 0;
+    background: white;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    margin-bottom: 25px;
+    color: #4b5563;
+}
+
+.hero-image img {
+    width: 220px;
+    border-radius: 50%;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.buttons a {
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.btn-primary {
+    background: #2563eb;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #1d4ed8;
+}
+
+.btn-secondary {
+    border: 1px solid #2563eb;
+    color: #2563eb;
+}
+
+.section {
+    padding: 70px 0;
+}
+
+.section.alt {
+    background: #f3f4f6;
+}
+
+.section h2 {
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.paper-text {
+    max-width: 800px;
+    color: #4b5563;
+}
+
+footer {
+    background: white;
+    border-top: 1px solid #e5e7eb;
+    padding: 30px 0;
+    text-align: center;
+    color: #6b7280;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+}

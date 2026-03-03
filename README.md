@@ -1,10 +1,6 @@
 # Landing Page
 
-Uma landing page teste
-
-## 🌐 Visualize o projeto:
-
-**[Ver Projeto Online]aaa)**
+Uma landing page responsiva construída com HTML, CSS e JavaScript. 
 
 ## 🛠️ Tecnologias Utilizadas
 

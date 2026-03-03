@@ -1,142 +1,127 @@
-<main>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gabriel Follmer | Electoral Polling Research</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- HERO -->
-    <section id="about" class="hero">
-        <div class="container hero-container">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-            <div class="hero-text">
-                <h1>name</h1>
-                <h2>Electoral Research & Polling Analysis</h2>
+<header>
+    <div class="container nav">
+        <div class="logo">Gabriel Follmer</div>
+        <nav>
+            <a href="#paper">Main Paper</a>
+            <a href="#methodology">Methodology</a>
+            <a href="#data">Data</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
 
-                <p>
-                    I specialize in electoral polling analysis, bias measurement,
-                    forecasting models and quantitative evaluation of survey accuracy.
-                    My work focuses on Brazilian elections and institutional dynamics.
-                </p>
+<section class="hero">
+    <div class="container hero-content">
+        <div class="hero-text">
+            <h1>Statistical Evaluation of Electoral Polling Accuracy</h1>
+            <p>
+                A quantitative assessment of polling institute performance,
+                systematic bias patterns, and forecasting calibration in Brazilian elections.
+            </p>
 
-                <div class="hero-buttons">
-                    <a href="#" class="btn-primary">Research Papers</a>
-                    <a href="#projects" class="btn-secondary">View Projects</a>
-                </div>
-            </div>
-
-            <div class="hero-image">
-                <img src="src/images/avatar.jpg" alt="Gabriel Follmer">
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- RESEARCH -->
-    <section id="research" class="section light">
-        <div class="container">
-            <h2 class="section-title">Research Focus</h2>
-
-            <div class="grid-2">
-
-                <div>
-                    <h3>Methodological Interests</h3>
-                    <ul>
-                        <li>Polling Bias Measurement</li>
-                        <li>Forecasting Models</li>
-                        <li>Survey Methodology</li>
-                        <li>Time Series in Electoral Data</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3>Research Areas</h3>
-                    <ul>
-                        <li>Brazilian Presidential Elections</li>
-                        <li>Polling Institute Performance</li>
-                        <li>Electoral Uncertainty</li>
-                        <li>Statistical Evaluation of Forecast Accuracy</li>
-                    </ul>
-                </div>
-
+            <div class="buttons">
+                <a href="#" class="btn-primary">Download Paper (PDF)</a>
+                <a href="#methodology" class="btn-secondary">View Methodology</a>
             </div>
         </div>
-    </section>
 
+        <div class="hero-image">
+            <img src="assets/avatar.jpg" alt="Gabriel Follmer">
+        </div>
+    </div>
+</section>
 
-    <!-- DATA & MODELS -->
-    <section id="models" class="section">
-        <div class="container">
-            <h2 class="section-title">Data & Models</h2>
+<section id="paper" class="section">
+    <div class="container">
+        <h2>Abstract</h2>
+        <p class="paper-text">
+            This study evaluates the predictive performance of major Brazilian polling institutes
+            across multiple electoral cycles. Using forecast error decomposition,
+            bias estimation, and volatility-adjusted calibration models,
+            we assess systematic deviations between pre-election surveys and official results.
+        </p>
+    </div>
+</section>
 
-            <div class="grid-2">
-                <div class="project-card">
-                    <h3>Polling Bias Index</h3>
-                    <p>
-                        Development of an index to evaluate systematic bias 
-                        across polling institutes in multiple election cycles.
-                    </p>
-                </div>
+<section id="methodology" class="section alt">
+    <div class="container">
+        <h2>Methodological Framework</h2>
 
-                <div class="project-card">
-                    <h3>Electoral Forecast Model</h3>
-                    <p>
-                        Statistical forecasting framework combining polling averages,
-                        volatility measures and historical calibration.
-                    </p>
-                </div>
+        <div class="grid-3">
+            <div class="card">
+                <h3>Bias Estimation</h3>
+                <p>Mean error and directional bias across institutes and election years.</p>
+            </div>
+
+            <div class="card">
+                <h3>Forecast Calibration</h3>
+                <p>Adjustment models incorporating volatility and historical deviation.</p>
+            </div>
+
+            <div class="card">
+                <h3>Error Decomposition</h3>
+                <p>Systematic vs. random components of polling error.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
+<section id="data" class="section">
+    <div class="container">
+        <h2>Data & Replication</h2>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section light">
-        <div class="container">
-            <h2 class="section-title">Selected Projects</h2>
+        <div class="grid-2">
+            <div class="card">
+                <h3>Dataset</h3>
+                <p>Consolidated dataset of national and state-level surveys from 2006–2022.</p>
+            </div>
 
-            <div class="grid-2">
-                <div class="project-card">
-                    <img src="src/images/project1.png" alt="">
-                    <h3>2022 Presidential Election Analysis</h3>
-                    <p>
-                        Evaluation of polling accuracy and second-round forecasting errors.
-                    </p>
-                </div>
-
-                <div class="project-card">
-                    <img src="src/images/project2.png" alt="">
-                    <h3>Institute Performance Ranking</h3>
-                    <p>
-                        Comparative study of polling firms based on historical deviations.
-                    </p>
-                </div>
+            <div class="card">
+                <h3>Replication Files</h3>
+                <p>R scripts and econometric models available for full reproducibility.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
+<section id="about" class="section alt">
+    <div class="container">
+        <h2>About</h2>
+        <p class="paper-text">
+            Gabriel Follmer is a researcher focused on electoral behavior,
+            polling bias measurement and statistical forecasting models.
+            His work integrates econometrics, political methodology,
+            and computational data analysis.
+        </p>
+    </div>
+</section>
 
-    <!-- PUBLICATIONS -->
-    <section id="publications" class="section">
-        <div class="container">
-            <h2 class="section-title">Working Papers</h2>
+<section id="contact" class="section">
+    <div class="container">
+        <h2>Contact</h2>
+        <p>Email: gabriel@email.com</p>
+        <p>GitHub: github.com/seuusuario</p>
+    </div>
+</section>
 
-            <ul class="teaching-list">
-                <li>
-                    Electoral Poll Bias and Forecasting Accuracy in Brazil (2024)
-                </li>
-                <li>
-                    Institutional Determinants of Survey Error
-                </li>
-            </ul>
-        </div>
-    </section>
+<footer>
+    <div class="container">
+        <p>© 2026 Gabriel Follmer — Electoral Research</p>
+    </div>
+</footer>
 
-
-    <!-- CONTACT -->
-    <section id="contact" class="section light">
-        <div class="container">
-            <h2 class="section-title">Contact</h2>
-
-            <p>Email: your@email.com</p>
-            <p>Location: Brazil</p>
-        </div>
-    </section>
-
-</main>
+</body>
+</html>
